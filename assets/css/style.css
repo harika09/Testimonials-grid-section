@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    
+}
+body{
+    background: #ecf2f8;
+    margin: 30px 40px;
+}
+
+h2{
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: 20px;
+}
+
+/* Image */
+.profile
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+/* Name */
+.grid__1 .name, .grid__2 .name, .grid__3 .name, .grid__4 .name, .grid__5 .name{
+    font-weight: 600;
+    position: relative;
+    bottom: 50px;
+    left: 65px;
+}
+
+
+/* Graduate */
+.grid__1 span, .grid__2 span, .grid__3 span, .grid__4 span, .grid__5 span{
+    position: relative;
+    top: 10px;
+    opacity: 50%;
+}
+
+/* Font Color */
+
+.grid__1, .grid__2, .grid__5{
+    color: #ffffff;
+}
+
+
+.container{
+    padding: 70px 120px;
+}
+
+.bd-grid{
+    padding: 30px 35px;
+}
+
+/* Quation Text */
+.quoted{
+    opacity: 70%;
+}
+
+
+.grid__view{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+.img
+{
+    background: url(/assets/img/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: 9rem;
+    background-position-x: 80%;
+}
+.grid__1{
+    background-color: #7541c8;
+    border-radius: .5rem;   
+    grid-column-end: span 2;
+}
+
+
+.grid__2{
+    background-color: #48556a;
+    border-radius: .5rem;
+    letter-spacing: 2px;
+    
+}
+
+.grid__3{
+    background-color: #ffffff;
+    border-radius: .5rem;
+    grid-row-end: span 2;
+    letter-spacing: 4px;
+}
+
+
+.grid__4{
+    background-color: #ffff;
+    border-radius: .5rem;
+}
+.grid__4 .quoted {
+    letter-spacing: 4px;
+}
+
+.grid__5{
+    background-color: #1d222a;
+    border-radius: .5rem;
+    grid-column-end: span 2;
+}
+
+
+@media screen and (max-width: 930px)
+{
+
+    .grid{
+        padding: 70px 120px;
+    }
+    .grid__view
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .grid__2{
+        display: grid;
+        grid-column-end: span 2;
+    }
+
+    .grid__3{
+        grid-column-start: span 2;
+    }
+
+    .grid__4{
+        grid-column-start: span 2 ;
+    }
+    
+} 
+
+
+ @media screen and (min-width: 600px)
+{
+    .container{
+       
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    body{
+        margin: 0;
+    }
+    .container{
+        margin: auto;
+        padding: 10px 20px;
+    }
+}
+
+
