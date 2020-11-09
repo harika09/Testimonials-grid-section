@@ -7,7 +7,7 @@
 }
 body{
     background: #ecf2f8;
-    margin: 30px 40px;
+  
 }
 
 h2{
@@ -25,7 +25,12 @@ h2{
     border-radius: 50%;
 }
 
-
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
 
 /* Name */
 .grid__1 .name, .grid__2 .name, .grid__3 .name, .grid__4 .name, .grid__5 .name{
@@ -50,12 +55,8 @@ h2{
 }
 
 
-.container{
-    padding: 70px 120px;
-}
-
 .bd-grid{
-    padding: 30px 35px;
+    padding: 10px 10px;
 }
 
 /* Quation Text */
@@ -68,6 +69,8 @@ h2{
     display: grid;
     grid-gap: 20px;
     grid-template-columns: auto auto auto auto;
+
+    padding-top: 100px;
 }
 
 
@@ -119,12 +122,11 @@ h2{
     text-align: center;
 }
 
-@media screen and (max-width: 956px)
+
+@media screen and (max-width: 900px)
 {
 
-    .grid{
-        padding: 70px 120px;
-    }
+
     .grid__view
     {
         display: grid;
@@ -144,6 +146,7 @@ h2{
     .grid__4{
         grid-column-start: span 2 ;
     }
+
     
     .challenge{
         padding-bottom: 50px;
@@ -152,33 +155,11 @@ h2{
 } 
 
 
- @media screen and (min-width: 600px)
-{
-    .container{
-       
-        padding: 10px 20px;
-    }
-    .challenge{
-        font-size: 10px;
-        font-weight: 600;
-        padding-bottom: 50px;
-    }
-}
 
 @media screen and (max-width: 600px)
 {
-    body{
-        margin: 0;
-    }
     .container{
-        margin: auto;
-        padding: 10px 20px;
-    }
-    
-    .challenge{
-        font-size: 12px;
-        font-weight: 600;
-        padding-bottom: 50px;
+        padding: 20px 40px;
     }
 }
 
