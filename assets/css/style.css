@@ -15,7 +15,13 @@ h2{
     padding-bottom: 10px;
     position: relative;
     bottom: 20px;
-   
+}
+
+/* Layout */
+.bd-container{
+    max-width: 1435px;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 /* Image */
@@ -127,7 +133,7 @@ h2{
 
 @media screen and (max-width: 900px)
 {
-
+   
 
     .grid__view
     {
@@ -151,7 +157,7 @@ h2{
 
     
     .challenge{
-        padding-bottom: 50px;
+        padding-top: 50px;
     }
     
 } 
@@ -166,3 +172,9 @@ h2{
 }
 
 
+@media screen and (min-width: 1435px){
+    .bd-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
